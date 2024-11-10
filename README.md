@@ -1,8 +1,11 @@
 # DAS-Homework1
 
 Collaborators in the said project are as follows:
+
 Edon Fetaji, 221517
+
 Artan Ebibi, 221513
+
 Edi Rizvani, 221587
 
 The solution to the First Homework is uploaded under the name **MSE_project**. The directory is the entire **python environment** where the said program was executed. The python program is saved as **final.py**. In this project directory you will find all the **raw data** extracted from www.Mse.mk under the name **All_Stock_Data**, where the data for each stock is saved as a separate file. The **processed data** is saved in the directory with name: **Processed_Data**.
