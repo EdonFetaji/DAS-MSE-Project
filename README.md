@@ -9,6 +9,6 @@ The solution to the First Homework is uploaded under the name **MSE_project**. T
 
 The fastest run of the program was recorded at **63.4 seconds**, where we were using ethernet for fast connection. You can find the log in this directory by the name: **program-logs fastest-run**. As it was just a test of a bug fix we werent expecting a new best time run, we didnt record the specific run. In this version we werent logging the processing of files.
 
-Video Recording of the program execution can be found here: https://github.com/EdonFetaji/DAS-Homework1/blob/main/link_to_video_recording.md. In which the fastest run time was recorded at **69.01 seconds**
+Video Recording of the program execution can be found here:[ https://github.com/EdonFetaji/DAS-Homework1/blob/main/link_to_video_recording.md](https://drive.google.com/file/d/1DdQXQffiAWb_i6Wqca8mMHxuencOGKMU/view). In which the fastest run time was recorded at **69.01 seconds**
 
 The **SRS** of the project is stored as a pdf file, in this directory under the name 
