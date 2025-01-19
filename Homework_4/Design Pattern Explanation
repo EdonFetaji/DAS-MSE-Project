@@ -1,0 +1,36 @@
+Design Pattern Explanation
+ 
+Implementation of Model-View-Controller pattern:
+In this project, the Model-View-Controller (MVC) pattern was more widely used, as it is the foundational architectural pattern used in Django applications. 
+Although Django uses a slightly different modified version called (MVT) Model-View-Template.
+Why MVC/MVT?
+Separation of Concerns:
+•	The Model handles the data and business logic, ensuring database interactions and data validation are isolated from the user interface. 
+  We have two models in the backend app: ApplicationUser and Stock. Where we define the ApplicationUser which are the users of the application and how are they going to be implemented in the database.
+•	The View processes incoming requests, retrieves the appropriate data, and returns a response, serving as a bridge between the Model and Template. 
+  In this case the controller is named as the view, where the main functions of the applications are defined. 
+  Inside the app accounts : register, login and logout functions are defined, and in the backend app: adding to watchlist, 
+viewing historical data about a certain stock, home, the predictions about individual stocks, the profile of the user, the stock listing, stock details, technical analysis and viewing the watchlist. 
+•	The Template focuses on how the user intercace will look like, keeping the it clean and easy to read and usability.
+
+
+Implementation of the StockTechnicalAnalyzer and SeleniumHelpers:
+
+We used the Strategy Design Pattern to allow reusable, independent logic while maintaining flexibility and modularity. 
+For StockTechnicalAnalyzer, each technical analysis method is implemented as a static function, making them interchangeable strategies 
+for calculating various indicators Moving Averages and Oscilators like RSI, MACD, Bollinger Bands and much more. This ensures the class is scalable, reusable, and uses the Open/Closed Principle. 
+Similarly, in SeleniumHelpers, the SeleniumDriverPool uses a thread-safe design to manage a pool of Selenium WebDriver instances used for scraping two websites gathering the articles about individual stocks. 
+Each driver is treated as a reusable strategy for handling browser automation tasks, optimizing resource usage and allowing seamless scaling for concurrent operations. 
+Both implementations are simple, flexible, and efficient, making the systems reliable and easy to adapt.
+ 
+Implementation of WasabiClient
+
+We used the Singleton design pattern for this class, which is used to ensure that a class has only one instance and provides a global point of access to that instance. 
+It's useful in situations where creating multiple instances of a class would be inefficient and unnecessary. For instance, in the WasabiClient, 
+using a Singleton ensures that the connection to the Wasabi service is shared across the entire application rather than establishing a new connection every time you need to access it. 
+This saves resources, such as memory and processing power, and avoids unnecessary overhead.
+In a wide context, the Singleton is beneficial for managing shared resources like database connections, configuration settings, cloud service clients which does the work for fetching data, 
+updating or creating historical and article data in the cloud, such as reading the data for articles and historical data. It prevents the duplication of effort and keeps a consistent state or behavior. 
+It’s especially needed in applications that need to maintain a global state, like our application for Macedonian Stock exchange.
+
+
